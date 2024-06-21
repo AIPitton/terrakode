@@ -1,11 +1,23 @@
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
-import Head from 'next/head'
+import Navbar from '@/components/Navbar'
+import { Providers } from './providers'
+const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title:
     'Android iOS Web Apps Bucuresti | Dezvoltare aplicatii mobile si web ieftine',
   description:
     'Dezvoltare de aplicații Android, iOS si web ieftine în București. Aplicații performante și orientate către utilizator, la prețuri accesibile.',
+  openGraph: {
+    images: [
+      {
+        url: 'https://terrakode.com/rn.png',
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
 }
 const schema = {
   '@context': 'https://schema.org',
@@ -52,7 +64,6 @@ const schema = {
   ],
   image: 'http://www.terrakode.com/logo.png',
 }
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -60,13 +71,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      </Head>
-      <body>{children}</body>
+      <body className="dark:bg-stone-900">
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
+      </body>
     </html>
   )
 }
