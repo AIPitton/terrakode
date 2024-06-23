@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { RiMoneyEuroBoxFill } from 'react-icons/ri'
 import { RxUpdate } from 'react-icons/rx'
 import { MdEditSquare } from 'react-icons/md'
-import { FaCut } from 'react-icons/fa'
+import { FaTags } from 'react-icons/fa'
 import { FaWhatsappSquare } from 'react-icons/fa'
 const skills = [
   { skill: 'React Native' },
@@ -76,7 +76,7 @@ const AboutSection = () => {
             </div>
             <br />
             <div className="flex items-center justify-center md:justify-start">
-              <FaCut size="40px" className=" mr-5" />
+              <FaTags size="50px" className=" mr-4" />
               <p>
                 Până la data de{' '}
                 <span className="font-semibold text-teal-600">
