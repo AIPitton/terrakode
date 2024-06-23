@@ -84,7 +84,7 @@ const AboutSection = () => {
                 </span>{' '}
                 este valabil un{' '}
                 <span className="font-semibold text-teal-600">
-                  discount de %50 la aplicație mobilă și web.
+                  discount de %50 pentru aplicațiile web și mobile.
                 </span>
               </p>
             </div>
