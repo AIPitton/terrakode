@@ -1,5 +1,7 @@
 # TerraKode
 
+# Sitemap npm run dev before deploy to vercel
+
 npm install -D next-sitemap
 
 ## Getting Started

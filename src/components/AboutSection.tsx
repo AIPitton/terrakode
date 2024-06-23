@@ -4,6 +4,7 @@ import { RiMoneyEuroBoxFill } from 'react-icons/ri'
 import { RxUpdate } from 'react-icons/rx'
 import { MdEditSquare } from 'react-icons/md'
 import { FaCut } from 'react-icons/fa'
+import { FaWhatsappSquare } from 'react-icons/fa'
 const skills = [
   { skill: 'React Native' },
   { skill: 'JavaScript' },
@@ -84,6 +85,15 @@ const AboutSection = () => {
                 este valabil un{' '}
                 <span className="font-semibold text-teal-600">
                   discount de %50 la aplicație mobilă și web.
+                </span>
+              </p>
+            </div>
+            <br />
+            <div className="flex items-center justify-center md:justify-start">
+              <FaWhatsappSquare size="38px" className=" mr-4" />
+              <p>
+                <span className="font-bold text-2xl text-teal-600">
+                  {process.env.NEXT_PUBLIC_PHONE}
                 </span>
               </p>
             </div>
