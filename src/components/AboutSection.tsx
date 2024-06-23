@@ -32,7 +32,7 @@ const AboutSection = () => {
             </h1>
 
             <div className="flex items-center justify-center md:justify-start">
-              <RiMoneyEuroBoxFill size="55px" className=" mr-3 " />
+              <RiMoneyEuroBoxFill size="70px" className=" mr-3 " />
               <p>
                 Pentru aplicație{' '}
                 <span className="font-semibold text-teal-600">mobilă</span>{' '}
@@ -48,7 +48,7 @@ const AboutSection = () => {
             </div>
             <br />
             <div className="flex items-center justify-center md:justify-start">
-              <RxUpdate size="80px" className=" mr-2" />
+              <RxUpdate size="80px" className=" mr-4" />
               <p>
                 Magazinele de aplicații au nevoie periodic de{' '}
                 <span className="font-semibold text-teal-600">update-uri.</span>{' '}
@@ -62,7 +62,7 @@ const AboutSection = () => {
             </div>
             <br />
             <div className="flex items-center justify-center md:justify-start">
-              <MdEditSquare size="35px" className=" mr-3" />
+              <MdEditSquare size="45px" className=" mr-3" />
               <p>
                 Pentru{' '}
                 <span className="font-semibold text-teal-600">
@@ -76,7 +76,7 @@ const AboutSection = () => {
             </div>
             <br />
             <div className="flex items-center justify-center md:justify-start">
-              <FaCut size="35px" className=" mr-4" />
+              <FaCut size="40px" className=" mr-5" />
               <p>
                 Până la data de{' '}
                 <span className="font-semibold text-teal-600">
@@ -90,7 +90,7 @@ const AboutSection = () => {
             </div>
             <br />
             <div className="flex items-center justify-center md:justify-start">
-              <FaWhatsappSquare size="38px" className=" mr-4" />
+              <FaWhatsappSquare size="35px" className=" mr-3" />
               <p>
                 <span className="font-bold text-2xl text-teal-600">
                   {process.env.NEXT_PUBLIC_PHONE}
