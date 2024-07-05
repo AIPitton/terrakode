@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import { Providers } from './providers'
+import { Analytics } from '@vercel/analytics/react'
 const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title:
@@ -75,6 +76,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           {children}
+          <Analytics />
         </Providers>
       </body>
     </html>
